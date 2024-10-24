@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Elimina la lógica relacionada con el modo oscuro */
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+  /* Cambia esto a negro siempre */
+}
+
+/* Ya no necesitas las reglas de modo oscuro */
+body {
+  color: var(--foreground);
+  /* Este color será negro siempre */
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
